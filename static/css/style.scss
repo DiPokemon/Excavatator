@@ -1,0 +1,108 @@
+@import "fonts";
+@import "reset";
+@import "all";
+@import "mixins";
+@import "map";
+
+/* -- HEADER -- */
+header{
+
+  .container{
+    flex-direction: column;
+    padding: 20px 0px;
+
+    .header_top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left_side{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .logo_img{
+
+        }
+
+        .site_title_wrap{
+
+          .site_title{
+            text-transform: uppercase;
+            font-weight:500;
+            font-size: 24px;
+          }
+          .site_desc{
+            text-transform: lowercase;
+            font-size: 16px;
+            text-align: justify;
+            text-align-last: justify;
+          }
+        }
+      }
+
+      .right_side{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        .contact_block{
+          display:flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+
+          .social_link{
+            background-color: $purple;
+            color: $white;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1;
+            border-radius: 5px;
+
+          }
+
+          .contacts_wrap{
+            display: flex;
+            flex-direction: column;            
+            
+
+            a{
+              color: $dark_text; 
+              
+              
+              &.phone_link{
+                font-size: 16px;
+                font-weight: 500;
+              }
+
+              &.mail_link{
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+
+
+          }
+        }
+
+        .call_popup{
+          border-radius: 5px;
+          background-color: $orange;
+          color: $white;
+          padding: 5px 10px;
+          height: 100%;
+        }
+
+      }
+    }
+
+    .header_bottom{
+      
+    }
+  }
+}
+
+
+@import "adaptive";
