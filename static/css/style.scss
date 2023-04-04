@@ -15,6 +15,7 @@ header{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 10px 0px;
 
       .left_side{
         display: flex;
@@ -99,10 +100,71 @@ header{
     }
 
     .header_bottom{
-      
+      background-color: $purple;
+      padding: 15px;
+      border-radius: 0px 0px 10px 10px;
+
+      .header_menu{
+        display: flex;
+        align-items:center;
+
+        .menu_list{
+          display: flex;
+          gap:30px;
+          align-items:center;
+          margin:0;
+          padding:0;
+
+          .menu_item{
+            display: flex;
+            align-items:stretch;
+            float:left;
+
+            .menu_link{
+              display: flex;
+              font-weight:400;
+              font-size:16px;
+              line-height:24px;
+              color:$white;
+              align-items:center;
+              text-decoration:none;
+              transition:.3s linear;
+              position: relative;
+            }
+
+            .sub-menu{
+              display: none;
+              position: absolute;
+              top:70px;
+              z-index:5;
+              min-width:200px;
+              border-radius:3px;
+              border:1px solid $orange;
+              visibility:hidden;
+              opacity:0;                
+              transform-origin:0 0;
+              transform:rotateX(-90deg);
+              transition:.5s linear;
+              box-shadow:0 0 5px $purple;
+            }
+
+            &:hover{
+
+              .sub_menu{
+                visibility:visible;
+                opacity:1;
+                transform:rotateX(0deg);
+                display: flex;
+              }
+            }
+
+            
+          }
+        }
+      }      
     }
   }
 }
 
 
-@import "adaptive";
+@import "adaptive"

@@ -161,6 +161,7 @@ header .container .header_top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0px;
 }
 header .container .header_top .left_side {
   display: -webkit-box;
@@ -243,4 +244,81 @@ header .container .header_top .right_side .call_popup {
   color: #fff;
   padding: 5px 10px;
   height: 100%;
+}
+header .container .header_bottom {
+  background-color: #4f4872;
+  padding: 15px;
+  border-radius: 0px 0px 10px 10px;
+}
+header .container .header_bottom .header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container .header_bottom .header_menu .menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+header .container .header_bottom .header_menu .menu_list .menu_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  float: left;
+}
+header .container .header_bottom .header_menu .menu_list .menu_item .menu_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  position: relative;
+}
+header .container .header_bottom .header_menu .menu_list .menu_item .sub-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  z-index: 5;
+  min-width: 200px;
+  border-radius: 3px;
+  border: 1px solid #fcb000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  -webkit-box-shadow: 0 0 5px #4f4872;
+          box-shadow: 0 0 5px #4f4872;
+}
+header .container .header_bottom .header_menu .menu_list .menu_item:hover .sub_menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
